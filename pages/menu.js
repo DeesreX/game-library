@@ -5,7 +5,11 @@ import NavigationMenu from './navigation-menu';
 const Menu = () => {
   return (
     <nav>
+      <Link href='/'>
+        Home
+      </Link>
       <NavigationMenu />
+
       <a href='/about'>About</a>
       <style jsx>{`
         nav {
