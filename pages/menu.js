@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import NavigationMenu from './navigation-menu';
+import '../styles/menu.module.css';
 
 const Menu = () => {
   return (

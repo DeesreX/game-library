@@ -5,17 +5,12 @@ const Categories = () => {
   // the category name is in the url
   // we can get it with useRouter
   const category = useRouter().asPath.split('/').slice(2);
-  const categoryName = category.find((c) => c === 'action')
+  const categoryName = category[0];
   return (
     <div>
       <Menu />
       <h1>{categoryName} Games</h1>
-      <ul>
-        <li>Game 1</li>
-        <li>Game 2</li>
-        <li>Game 3</li>
-      </ul>
-    </div>
+      </div>
   );
 };
 
