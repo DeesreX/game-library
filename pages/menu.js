@@ -1,39 +1,18 @@
 import React from 'react';
 import Link from 'next/link';
 import NavigationMenu from './navigation-menu';
-import '../styles/menu.module.css';
+import '../styles/Menu.module.css';
 
 const Menu = () => {
   return (
-    <nav>
-      <Link href='/'>
+    <nav className='nav'>
+      <Link href="/" className='link'>
         Home
       </Link>
       <NavigationMenu />
-      <Link href="/about">
+      <Link href="/about" className='link'>
         About
         </Link>
-      <style jsx>{`
-        nav {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          background-color: #222;
-          color: #fff;
-          padding: 1rem;
-        }
-        a {
-          color: #fff;
-          text-decoration: none;
-          font-size: 18px;
-          font-weight: bold;
-          margin-right: 1rem;
-          transition: color 0.2s;
-        }
-        a:hover {
-          color: #ccc;
-        }
-      `}</style>
     </nav>
   );
 };

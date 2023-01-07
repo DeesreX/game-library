@@ -9,7 +9,7 @@ const Categories = () => {
   return (
     <div>
       <Menu />
-      <h1>{categoryName} Games</h1>
+      <h1 className='h1-unique'>{categoryName} Games</h1>
       </div>
   );
 };
