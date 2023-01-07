@@ -13,40 +13,6 @@ const NavigationMenu = () => {
                     </li>
                 ))}
             </ul>
-
-
-            <style jsx>{`
-                nav {
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                    background-color: #222;
-                    color: #fff;
-                    padding: 1rem;
-                }
-                Link {
-                    color: #fff;
-                    text-decoration: none;
-                    font-size: 18px;
-                    font-weight: bold;
-                    margin-right: 1rem;
-                    transition: color 0.2s;
-                }
-                Link:hover {
-                    color: #ccc;
-
-                }
-                ul {
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                    }
-          
-                li {
-                    list-style: none;
-                    margin-right: 1rem;
-                }
-            `}</style>
         </nav>
 
     );
