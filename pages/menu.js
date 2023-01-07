@@ -9,9 +9,9 @@ const Menu = () => {
         Home
       </Link>
       <NavigationMenu />
-      <link href='/about'>
+      <Link href="/about">
         About
-      </link>
+        </Link>
       <style jsx>{`
         nav {
           display: flex;
