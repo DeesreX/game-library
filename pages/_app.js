@@ -1,5 +1,7 @@
 import Head from 'next/head';
 import styles from '../styles/globals.css';
+import Link from 'next/link';
+import NavigationMenu from './navigation-menu';
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -13,7 +15,15 @@ function MyApp({ Component, pageProps }) {
         <link rel="shortcut icon" href="/favicon.ico" />
       </Head>
       <header className={styles.header}>
-
+        <nav className='nav'>
+          <Link href="/" className='link'>
+            Home
+          </Link>
+          <NavigationMenu />
+          <Link href="/about" className='link'>
+            About
+          </Link>
+        </nav>
       </header>
       <Component {...pageProps} />
     </>
