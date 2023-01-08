@@ -1,5 +1,4 @@
 import { useRouter } from 'next/router';
-import Menu from './menu';
 
 const Categories = () => {
   // the category name is in the url
@@ -8,7 +7,6 @@ const Categories = () => {
   const categoryName = category[0];
   return (
     <div>
-      <Menu />
       <h1 className='h1-unique'>{categoryName} Games</h1>
       </div>
   );

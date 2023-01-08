@@ -1,0 +1,19 @@
+.logo {
+    width: 100px;
+    height: 100px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+header {
+    background-color: #222;
+}
+
+header .container {
+    color: #fff;
+}

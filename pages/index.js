@@ -1,10 +1,14 @@
 import React from 'react';
-import Menu from './menu';
+
 
 function Home() {
     return (
         <div>
-            <Menu />
+            <header />
+            <div className='container'>
+                <div className="logo">
+                </div>
+            </div>
         </div>
     );
 }
