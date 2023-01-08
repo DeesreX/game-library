@@ -1,7 +1,11 @@
 <?php
 namespace Rextopia\Projects\Generate_Image;
 
-include('/../components/head.php');
+// show errors
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
 
 
 // show errors
@@ -9,8 +13,13 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
+$key = getenv('OPENAI_API_KEY');
+var_dump($key);
 // Set API key and endpoint URL
-$api_key = 'Bearer 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';
+$api_key = 'Bearer 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';
+
+
+echo $api_key;
 $endpoint = 'https://api.openai.com/v1/images/generations';
 
 $prompt;
