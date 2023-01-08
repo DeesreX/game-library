@@ -2,6 +2,9 @@ import React from 'react';
 import Link from 'next/link';
 import NavigationMenu from './navigation-menu';
 import '../styles/Menu.module.css';
+import logo from '../public/favicon.ico';
+
+
 
 const Menu = () => {
   return (
@@ -12,7 +15,7 @@ const Menu = () => {
       <NavigationMenu />
       <Link href="/about" className='link'>
         About
-        </Link>
+      </Link>
     </nav>
   );
 };
