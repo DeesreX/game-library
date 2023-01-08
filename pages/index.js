@@ -7,7 +7,6 @@ function Home() {
             <header />
             <div className='container'>
                 <div className="logo">
-                    <img src="logo.png" alt="Logo" />
                 </div>
             </div>
         </div>
